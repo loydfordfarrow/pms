@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-12 01:00:09.622660",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "unit_number",
+  "property__building",
+  "floor",
+  "size_sqm",
+  "rent_amount",
+  "status_available__occupied__maintenance"
+ ],
+ "fields": [
+  {
+   "fieldname": "unit_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit Number",
+   "length": 16,
+   "reqd": 1
+  },
+  {
+   "fieldname": "property__building",
+   "fieldtype": "Data",
+   "label": "Property / Building",
+   "length": 16
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Floor",
+   "length": 16,
+   "reqd": 1
+  },
+  {
+   "fieldname": "size_sqm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size (sqm)",
+   "length": 16,
+   "reqd": 1
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rent Amount",
+   "length": 16,
+   "reqd": 1
+  },
+  {
+   "fieldname": "status_available__occupied__maintenance",
+   "fieldtype": "Data",
+   "label": "Status (Available / Occupied / Maintenance)",
+   "length": 8,
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-12 01:03:49.772152",
+ "modified_by": "Administrator",
+ "module": "PMS",
+ "name": "Unit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
