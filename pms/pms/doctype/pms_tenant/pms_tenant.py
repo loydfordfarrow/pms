@@ -5,7 +5,7 @@
 from frappe.model.document import Document
 
 
-class Tenant(Document):
+class PMS_Tenant(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,13 +14,11 @@ class Tenant(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		address: DF.Data
-		contact_number: DF.Data
-		email: DF.Data
-		id_proof: DF.AttachImage
-		move_in_date: DF.Date
-		move_out_date: DF.Date
+		tenant_address: DF.SmallText
+		tenant_email: DF.Data
+		tenant_id_number: DF.Data
 		tenant_name: DF.Data
+		tenant_phone: DF.Data
 	# end: auto-generated types
 
 	pass

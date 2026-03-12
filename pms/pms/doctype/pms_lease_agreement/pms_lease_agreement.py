@@ -5,7 +5,7 @@
 from frappe.model.document import Document
 
 
-class Unit(Document):
+class PMS_Lease_Agreement(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,12 +14,13 @@ class Unit(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		floor: DF.Data
-		unit__building: DF.Data | None
-		rent_amount: DF.Data
-		size_sqm: DF.Data
-		status_available__occupied__maintenance: DF.Data
-		unit_number: DF.Data
+		lease_end_date: DF.Date
+		lease_monthly_rent: DF.Currency
+		lease_security_deposit: DF.Currency
+		lease_start_date: DF.Date
+		lease_status: DF.Literal["", "Active", "Expired"]
+		lease_tenant: DF.Link
+		lease_unit: DF.Link
 	# end: auto-generated types
 
 	pass

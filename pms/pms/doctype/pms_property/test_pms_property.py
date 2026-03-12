@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestPMS_Test_DocType_isSingle(IntegrationTestCase):
+class IntegrationTestPMS_Property(IntegrationTestCase):
 	"""
-	Integration tests for PMS_Test_DocType_isSingle.
+	Integration tests for PMS_Property.
 	Use this class for testing interactions between multiple components.
 	"""
 

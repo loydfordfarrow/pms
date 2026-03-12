@@ -1,71 +1,70 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-12 01:00:09.622660",
+ "creation": "2026-03-12 21:04:13.068607",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "unit_number",
-  "property__building",
-  "floor",
-  "size_sqm",
-  "rent_amount",
-  "status_available__occupied__maintenance"
+  "new_tenant_section",
+  "tenant_name",
+  "tenant_phone",
+  "tenant_email",
+  "tenant_id_number",
+  "tenant_address",
+  "column_break_azwe"
  ],
  "fields": [
   {
-   "fieldname": "unit_number",
+   "fieldname": "new_tenant_section",
+   "fieldtype": "Section Break",
+   "label": "New Tenant"
+  },
+  {
+   "fieldname": "tenant_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Unit Number",
-   "length": 16,
+   "label": "Tenant Name",
    "reqd": 1
   },
   {
-   "fieldname": "property__building",
-   "fieldtype": "Data",
-   "label": "Property / Building",
-   "length": 16
-  },
-  {
-   "fieldname": "floor",
+   "fieldname": "tenant_phone",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Floor",
-   "length": 16,
+   "label": "Tenant Phone",
    "reqd": 1
   },
   {
-   "fieldname": "size_sqm",
+   "fieldname": "tenant_email",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Size (sqm)",
-   "length": 16,
+   "label": "Tenant Email",
    "reqd": 1
   },
   {
-   "fieldname": "rent_amount",
+   "fieldname": "tenant_id_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Rent Amount",
-   "length": 16,
+   "label": "Tenant ID Number",
    "reqd": 1
   },
   {
-   "fieldname": "status_available__occupied__maintenance",
-   "fieldtype": "Data",
-   "label": "Status (Available / Occupied / Maintenance)",
-   "length": 8,
+   "fieldname": "tenant_address",
+   "fieldtype": "Small Text",
+   "label": "Tenant Address",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_azwe",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-12 01:03:49.772152",
+ "modified": "2026-03-12 21:28:18.527824",
  "modified_by": "Administrator",
  "module": "PMS",
- "name": "Unit",
+ "name": "PMS_Tenant",
  "owner": "Administrator",
  "permissions": [
   {
@@ -86,5 +85,6 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

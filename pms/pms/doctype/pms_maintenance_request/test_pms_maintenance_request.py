@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestTenant(IntegrationTestCase):
+class IntegrationTestPMS_Maintenance_Request(IntegrationTestCase):
 	"""
-	Integration tests for Tenant.
+	Integration tests for PMS_Maintenance_Request.
 	Use this class for testing interactions between multiple components.
 	"""
 

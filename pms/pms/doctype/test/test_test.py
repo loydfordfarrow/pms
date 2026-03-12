@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestPMS_Test_DocType_isVirtual(IntegrationTestCase):
+class IntegrationTestTest(IntegrationTestCase):
 	"""
-	Integration tests for PMS_Test_DocType_isVirtual.
+	Integration tests for Test.
 	Use this class for testing interactions between multiple components.
 	"""
 

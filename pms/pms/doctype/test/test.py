@@ -2,10 +2,10 @@
 # For license information, please see license.txt
 
 # import frappe
-from frappe.utils.nestedset import NestedSet
+from frappe.model.document import Document
 
 
-class PMS_Test_DocType_isTree(NestedSet):
+class Test(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,11 +14,8 @@ class PMS_Test_DocType_isTree(NestedSet):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		is_group: DF.Check
-		lft: DF.Int
-		old_parent: DF.Link | None
-		parent_pms_test_doctype_istree: DF.Link | None
-		rgt: DF.Int
+		property_address: DF.SmallText | None
+		property_name: DF.Data | None
 	# end: auto-generated types
 
 	pass

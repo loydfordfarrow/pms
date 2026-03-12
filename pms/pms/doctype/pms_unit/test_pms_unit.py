@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestPMS_Test_DocType_isChildTable(IntegrationTestCase):
+class IntegrationTestPMS_Unit(IntegrationTestCase):
 	"""
-	Integration tests for PMS_Test_DocType_isChildTable.
+	Integration tests for PMS_Unit.
 	Use this class for testing interactions between multiple components.
 	"""
 
