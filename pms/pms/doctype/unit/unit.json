@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:unit_number",
  "creation": "2026-03-13 10:58:21.062206",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -23,14 +24,15 @@
    "fieldname": "unit_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Unit Number",
-   "reqd": 1
+   "label": "Number",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "unit_property",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Unit Property",
+   "label": "Property",
    "options": "Property",
    "reqd": 1
   },
@@ -38,26 +40,26 @@
    "fieldname": "unit_floor",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Unit Floor",
+   "label": "Floor",
    "reqd": 1
   },
   {
    "fieldname": "unit_size",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Unit Size",
+   "label": "Size (sqm)",
    "reqd": 1
   },
   {
    "fieldname": "unit_rent_amount",
    "fieldtype": "Currency",
-   "label": "Unit Rent Amount",
+   "label": "Rent Amount",
    "reqd": 1
   },
   {
    "fieldname": "unit_status",
    "fieldtype": "Select",
-   "label": "Unit Status",
+   "label": "Status",
    "options": "\nAvailable\nOccupied\nMaintenance",
    "reqd": 1
   }
@@ -65,10 +67,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-13 11:01:01.102915",
+ "modified": "2026-03-13 13:57:19.440218",
  "modified_by": "Administrator",
  "module": "PMS",
  "name": "Unit",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

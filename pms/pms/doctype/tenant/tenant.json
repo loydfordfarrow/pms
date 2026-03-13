@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:tenant_name",
  "creation": "2026-03-13 10:56:05.686688",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -22,44 +23,48 @@
    "fieldname": "tenant_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Tenant Name",
-   "reqd": 1
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "tenant_phone",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Tenant Phone",
+   "label": "Phone",
+   "length": 11,
    "reqd": 1
   },
   {
    "fieldname": "tenant_email",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Tenant Email",
+   "label": "Email",
    "reqd": 1
   },
   {
    "fieldname": "tenant_id_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Tenant ID Number",
+   "label": "ID Number",
+   "length": 16,
    "reqd": 1
   },
   {
    "fieldname": "tenant_address",
    "fieldtype": "Small Text",
-   "label": "Tenant Address",
+   "label": "Address",
    "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-13 10:57:25.940884",
+ "modified": "2026-03-13 13:51:16.704807",
  "modified_by": "Administrator",
  "module": "PMS",
  "name": "Tenant",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

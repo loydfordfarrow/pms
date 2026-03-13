@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:maintenance_unit",
  "creation": "2026-03-13 11:08:00.242034",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -22,15 +23,16 @@
    "fieldname": "maintenance_unit",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Maintenance Unit",
+   "label": "Unit",
    "options": "Unit",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "maintenance_tenant",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Maintenance Tenant",
+   "label": "Tenant",
    "options": "Tenant",
    "reqd": 1
   },
@@ -38,21 +40,21 @@
    "fieldname": "maintenance_issue",
    "fieldtype": "Small Text",
    "in_list_view": 1,
-   "label": "Maintenance Issue",
+   "label": "Issue",
    "reqd": 1
   },
   {
    "fieldname": "maintenance_priority",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Maintenance Priority",
+   "label": "Priority",
    "options": "\nLow\nMedium\nHigh",
    "reqd": 1
   },
   {
    "fieldname": "maintenance_status",
    "fieldtype": "Select",
-   "label": "Maintenance Status",
+   "label": "Status",
    "options": "Open\nIn Progress\nCompleted",
    "reqd": 1
   }
@@ -60,10 +62,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-13 11:10:53.013173",
+ "modified": "2026-03-13 13:44:39.875164",
  "modified_by": "Administrator",
  "module": "PMS",
  "name": "Maintenance Request",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

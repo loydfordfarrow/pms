@@ -24,7 +24,7 @@
    "fieldname": "lease_tenant",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Lease Tenant",
+   "label": "Tenant",
    "options": "Tenant",
    "reqd": 1
   },
@@ -32,7 +32,7 @@
    "fieldname": "lease_unit",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Lease Unit",
+   "label": "Unit",
    "options": "Unit",
    "reqd": 1
   },
@@ -40,32 +40,32 @@
    "fieldname": "lease_start_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Lease Start Date",
+   "label": "Start Date",
    "reqd": 1
   },
   {
    "fieldname": "lease_end_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Lease End Date",
+   "label": "End Date",
    "reqd": 1
   },
   {
    "fieldname": "lease_monthly_rent",
    "fieldtype": "Currency",
-   "label": "Lease Monthly Rent",
+   "label": "Monthly Rent",
    "reqd": 1
   },
   {
    "fieldname": "lease_security_deposit",
    "fieldtype": "Currency",
-   "label": "Lease Security Deposit",
+   "label": "Security Deposit",
    "reqd": 1
   },
   {
    "fieldname": "lease_status",
    "fieldtype": "Select",
-   "label": "Lease Status",
+   "label": "Status",
    "options": "Active\nExpired",
    "reqd": 1
   }
@@ -73,7 +73,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-13 11:06:31.069239",
+ "modified": "2026-03-13 13:45:13.236849",
  "modified_by": "Administrator",
  "module": "PMS",
  "name": "Lease Agreement",
