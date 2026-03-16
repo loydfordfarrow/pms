@@ -1,62 +1,54 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:property_name",
- "creation": "2026-03-13 10:51:54.172155",
+ "autoname": "field:billing_client",
+ "creation": "2026-03-16 17:12:47.507641",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "new_property_section",
-  "property_name",
-  "property_address",
-  "property_owner",
-  "property_type"
+  "new_billing_section",
+  "billing_client",
+  "billing_unit",
+  "billing_amount"
  ],
  "fields": [
   {
-   "fieldname": "new_property_section",
+   "fieldname": "new_billing_section",
    "fieldtype": "Section Break",
-   "label": "New Property"
+   "label": "New Billing"
   },
   {
-   "fieldname": "property_name",
-   "fieldtype": "Data",
+   "fieldname": "billing_client",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Billing Client",
+   "options": "Client",
    "reqd": 1,
    "unique": 1
   },
   {
-   "fieldname": "property_address",
-   "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "label": "Address",
-   "reqd": 1
-  },
-  {
-   "fieldname": "property_owner",
+   "fieldname": "billing_unit",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Owner",
-   "options": "User",
+   "label": "Billing Unit",
+   "options": "Unit",
    "reqd": 1
   },
   {
-   "fieldname": "property_type",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Type",
-   "options": "\nApartment\nHouse\nCommercial",
+   "fieldname": "billing_amount",
+   "fieldtype": "Currency",
+   "label": "Billing Amount",
+   "non_negative": 1,
    "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-16 16:18:32.295230",
+ "modified": "2026-03-16 17:22:58.759085",
  "modified_by": "Administrator",
  "module": "PMS",
- "name": "Property",
+ "name": "Billing",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

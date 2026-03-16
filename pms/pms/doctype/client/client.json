@@ -1,69 +1,50 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:tenant_name",
- "creation": "2026-03-13 10:56:05.686688",
+ "autoname": "field:client_name",
+ "creation": "2026-03-16 16:08:49.163488",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "new_tenant_section",
-  "tenant_name",
-  "tenant_phone",
-  "tenant_email",
-  "tenant_id_number",
-  "tenant_address"
+  "new_client_section",
+  "client_name",
+  "client_phone",
+  "client_address"
  ],
  "fields": [
   {
-   "fieldname": "new_tenant_section",
+   "fieldname": "new_client_section",
    "fieldtype": "Section Break",
-   "label": "New Tenant"
+   "label": "New Client"
   },
   {
-   "fieldname": "tenant_name",
+   "fieldname": "client_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Client Name",
    "reqd": 1,
    "unique": 1
   },
   {
-   "fieldname": "tenant_phone",
+   "fieldname": "client_phone",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Phone",
-   "length": 11,
+   "label": "Client Phone",
    "reqd": 1
   },
   {
-   "fieldname": "tenant_email",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Email",
-   "reqd": 1
-  },
-  {
-   "fieldname": "tenant_id_number",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "ID Number",
-   "length": 16,
-   "reqd": 1
-  },
-  {
-   "fieldname": "tenant_address",
+   "fieldname": "client_address",
    "fieldtype": "Small Text",
-   "label": "Address",
+   "label": "Client Address",
    "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-13 13:51:16.704807",
+ "modified": "2026-03-16 17:20:51.982059",
  "modified_by": "Administrator",
  "module": "PMS",
- "name": "Tenant",
+ "name": "Client",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
