@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:client_username",
  "creation": "2026-03-18 15:32:41.878892",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -22,7 +23,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Client Username",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "client_password",
@@ -33,10 +35,9 @@
   },
   {
    "fieldname": "client_phone",
-   "fieldtype": "Data",
+   "fieldtype": "Phone",
    "in_list_view": 1,
    "label": "Client Phone",
-   "length": 13,
    "reqd": 1
   },
   {
@@ -50,10 +51,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-18 15:35:42.377046",
+ "modified": "2026-03-18 16:13:34.472826",
  "modified_by": "Administrator",
  "module": "PMS",
  "name": "PMS Client",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
