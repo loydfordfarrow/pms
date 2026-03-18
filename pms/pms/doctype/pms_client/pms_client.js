@@ -1,7 +1,7 @@
 // Copyright (c) 2026, Lloyd Lariosa and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Client", {
+// frappe.ui.form.on("PMS Client", {
 // 	refresh(frm) {
 
 // 	},

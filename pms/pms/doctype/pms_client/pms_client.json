@@ -1,13 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:client_name",
- "creation": "2026-03-16 16:08:49.163488",
+ "creation": "2026-03-18 15:32:41.878892",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "new_client_section",
-  "client_name",
+  "client_username",
+  "client_password",
   "client_phone",
   "client_address"
  ],
@@ -18,22 +18,31 @@
    "label": "New Client"
   },
   {
-   "fieldname": "client_name",
+   "fieldname": "client_username",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Client Name",
-   "reqd": 1,
-   "unique": 1
+   "label": "Client Username",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client_password",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client Password",
+   "reqd": 1
   },
   {
    "fieldname": "client_phone",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Client Phone",
+   "length": 13,
    "reqd": 1
   },
   {
    "fieldname": "client_address",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
    "label": "Client Address",
    "reqd": 1
   }
@@ -41,11 +50,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-16 17:20:51.982059",
+ "modified": "2026-03-18 15:35:42.377046",
  "modified_by": "Administrator",
  "module": "PMS",
- "name": "Client",
- "naming_rule": "By fieldname",
+ "name": "PMS Client",
  "owner": "Administrator",
  "permissions": [
   {
@@ -66,5 +74,6 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
